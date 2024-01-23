@@ -83,15 +83,15 @@
           </a>
           <table>
             <tr>
-              <th scope="row">Product Name</th>
+              <th scope="col">Product Name</th>
               <td>Hurst</td>
             </tr>
             <tr>
-              <th scope="row">Available Colors</th>
+              <th scope="col">Available Colors</th>
               <td>2 colours</td>
             </tr>
             <tr>
-              <th scope="row">Price</th>
+              <th scope="col">Price</th>
               <td>$185</td>
             </tr>
           </table>
@@ -137,7 +137,7 @@
       </header>
       <article role="article">
         <h3>Who are we?</h3>
-        <p>Apologies if you were looking for an ordinary optical store. We've hand-picked the unique brands from all
+        <p role="">Apologies if you were looking for an ordinary optical store. We've hand-picked the unique brands from all
           over the world to give you the special look for your everyday life.</p>
         <p>Our glasses will have you looking great and feeling better. We work with independent brands who use the
           highest-grade of materials, demonstrating detail and craftsmanship in every single pair. A wide range of
@@ -153,17 +153,17 @@
         <label for="feedbackName">Name:</label>
         <input type="text" id="feedbackName" name="feedbackName" aria-describedby="feedbackName-help" aria-required="true" />
         <div id="feedbackName-help" role="contentinfo">
-          <p role="paragraph">Please enter your full name.</p>
+          <p role="definition" >Please enter your full name.</p>
         </div>      
         <label for="feedbackEmail">Email:</label>
         <input type="email" id="feedbackEmail" name="feedbackEmail" aria-describedby="feedbackEmail-help" required aria-required="true"/>
         <div id="feedbackEmail-help" role="contentinfo">
-          <p role="paragraph">Please enter a valid email address.</p>
+          <p role="definition">Please enter a valid email address.</p>
         </div>
         <label for="feedbackMessage">Feedback:</label>
         <textarea id="feedbackMessage" name="feedbackMessage" rows="4" aria-describedby="feedbackMessage-help" required aria-required="true"></textarea>
         <div id="feedbackMessage-help" role="contentinfo">
-          <p role="paragraph">Please provide your feedback in the space below.</p>
+          <p role="definition">Please provide your feedback in the space below.</p>
         </div>
         <button type="submit" role="button" aria-live="assertive" aria-atomic="true">Submit Feedback</button>
       </form>

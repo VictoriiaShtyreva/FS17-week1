@@ -258,6 +258,47 @@ th {
   padding: 20px 0;
 }
 
+.scrolling-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-to-right,
+.right-to-left {
+  font-size: 5em;
+  color: pink;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.left-to-right {
+  animation: scrollLeftToRight 10s linear infinite;
+}
+
+.right-to-left {
+  animation: scrollRightToLeft 10s linear infinite;
+}
+
+@keyframes scrollLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes scrollRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .brand__content {
   display: flex;
   justify-content: space-between;

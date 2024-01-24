@@ -38,7 +38,7 @@ img {
 /* Header section */
 .page-header {
   width: 100%;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
 }
 
 .page-header__container {
@@ -92,10 +92,23 @@ img {
 }
 
 .promo__slogan {
-  font-size: 4rem;
+  font-size: 3em;
   padding: 0;
   margin-top: 20rem;
   align-self: baseline;
+
+  animation: scrollText 10s ease-in infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .promo__link {
@@ -144,6 +157,66 @@ img {
 }
 
 /* New in Stock Section */
+.catalog-new {
+  margin-top: 3rem;
+}
+
+.catalog-new__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-new__header {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.catalog-new__link {
+  padding: 20px 0;
+}
+
+.catalog-new__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.catalog-new__item {
+  overflow: hidden;
+}
+
+.product-caption {
+  font-size: 0.5em;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+.product-details {
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  font-size: 0.8em;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
 
 /* Another Promo Section */
 
@@ -162,3 +235,166 @@ img {
 }
 
 /* Our Brands Section */
+.brand {
+  margin-top: 3rem;
+}
+
+.brand__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand__header {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.brand__link {
+  padding: 20px 0;
+}
+
+.brand__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand__figure {
+  flex-shrink: 0;
+}
+
+.brand__subtitle {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.brand__paragraph {
+  margin-bottom: 15px;
+}
+
+.brand__figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Feedback Form */
+.form {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  background-color: #a8bbd0;
+}
+
+.feedback-form {
+  max-width: 50vw;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  justify-items: stretch;
+}
+
+.feedback-form__title {
+  margin-bottom: 10px;
+  grid-column: span 2;
+}
+
+.feedback-form__description {
+  margin-bottom: 20px;
+  grid-column: span 2;
+}
+
+.feedback-form__label {
+  text-align: end;
+  margin-bottom: 5px;
+}
+
+.feedback-form__input,
+.feedback-form__textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.feedback-form__textarea {
+  resize: vertical;
+}
+
+.feedback-form__help {
+  margin-bottom: 10px;
+  color: #888;
+}
+
+.feedback-form__help p {
+  margin: 0;
+}
+
+.feedback-form__submit {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  grid-column: 2;
+}
+
+.feedback-form__submit:hover {
+  background-color: #2980b9;
+}
+
+/* Footer section */
+.footer {
+  background-color: #f4f4f4;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  margin: 0;
+}
+
+.footer__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__item {
+  font-size: 0.8em;
+  padding: 20px;
+}
+
+.footer__link {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #a7bad1;
+}
+
+.footer__address {
+  border-left: 2px solid;
+  padding: 20px;
+}
+
+.footer__phone,
+.footer__email {
+  margin: 0;
+  color: #333;
+}

@@ -118,15 +118,21 @@
         </div>
       </section>
       <!-- New in Stock Section -->
-      <section aria-label="New in stock">
-        <header>
-          <h2>New in stock</h2>
-          <a href="#" aria-label="See the Collection" role="button"
-            >SEE THE COLLECTION</a
-          >
+      <section class="catalog-new" aria-label="New in stock">
+        <header class="page-header">
+          <div class="container catalog-new__container">
+            <h2 class="catalog-new__header">New in stock</h2>
+            <a
+              class="catalog-new__link"
+              href="#"
+              aria-label="See the Collection"
+              role="button"
+              >SEE THE COLLECTION</a
+            >
+          </div>
         </header>
-        <ul role="list">
-          <li role="listitem">
+        <div class="catalog-new__list" role="list">
+          <article class="catalog-new__item" role="listitem">
             <a
               href="#"
               role="button"
@@ -141,23 +147,25 @@
                   alt="A stylish pair of glasses with a tortoise shell frame, perfect for adding a touch of sophistication to any outfit."
                 />
               </figure>
+              <figcaption class="product-details">
+                <table role="presentation">
+                  <tr>
+                    <th scope="row">Product Name</th>
+                    <td>Noemi</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Available Colors</th>
+                    <td>2 colours</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Price</th>
+                    <td>$95</td>
+                  </tr>
+                </table>
+              </figcaption>
             </a>
-            <table role="presentation">
-              <tr>
-                <th scope="row">Product Name</th>
-                <td>Noemi</td>
-              </tr>
-              <tr>
-                <th scope="row">Available Colors</th>
-                <td>2 colours</td>
-              </tr>
-              <tr>
-                <th scope="row">Price</th>
-                <td>$95</td>
-              </tr>
-            </table>
-          </li>
-          <li role="listitem">
+          </article>
+          <article class="catalog-new__item" role="listitem">
             <a
               href="#"
               role="button"
@@ -172,23 +180,25 @@
                   alt="A pair of glasses with a green frame and tortoise shell lenses, perfect for adding a stylish touch to any outfit."
                 />
               </figure>
+              <figcaption class="product-details">
+                <table>
+                  <tr>
+                    <th scope="col">Product Name</th>
+                    <td>Hurst</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">Available Colors</th>
+                    <td>2 colours</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">Price</th>
+                    <td>$185</td>
+                  </tr>
+                </table>
+              </figcaption>
             </a>
-            <table>
-              <tr>
-                <th scope="col">Product Name</th>
-                <td>Hurst</td>
-              </tr>
-              <tr>
-                <th scope="col">Available Colors</th>
-                <td>2 colours</td>
-              </tr>
-              <tr>
-                <th scope="col">Price</th>
-                <td>$185</td>
-              </tr>
-            </table>
-          </li>
-          <li role="listitem">
+          </article>
+          <article class="catalog-new__item" role="listitem">
             <a
               href="#"
               role="button"
@@ -203,23 +213,124 @@
                   alt="Metal and plastic sunglasses with a sleek design, perfect for shielding your eyes from the sun's rays."
                 />
               </figure>
+              <figcaption class="product-details">
+                <table>
+                  <tr>
+                    <th scope="col">Product Name</th>
+                    <td>Louisa Nylon</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">Available Colors</th>
+                    <td>2 colours</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">Price</th>
+                    <td>$245</td>
+                  </tr>
+                </table>
+              </figcaption>
             </a>
-            <table>
-              <tr>
-                <th scope="col">Product Name</th>
-                <td>Louisa Nylon</td>
-              </tr>
-              <tr>
-                <th scope="col">Available Colors</th>
-                <td>2 colours</td>
-              </tr>
-              <tr>
-                <th scope="col">Price</th>
-                <td>$245</td>
-              </tr>
-            </table>
-          </li>
-        </ul>
+          </article>
+          <article class="catalog-new__item" role="listitem">
+            <a
+              href="#"
+              role="button"
+              aria-label="Product details"
+              role="button"
+            >
+              <figure role="figure" aria-label="Saskia">
+                <img
+                  src="img/catalog-4.svg"
+                  width="453"
+                  height="254"
+                  alt="A pair of black glasses resting on a white background."
+                />
+              </figure>
+              <figcaption class="product-details">
+                <table role="presentation">
+                  <tr>
+                    <th scope="row">Product Name</th>
+                    <td>Saskia</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Available Colors</th>
+                    <td>4 colours</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Price</th>
+                    <td>$115</td>
+                  </tr>
+                </table>
+              </figcaption>
+            </a>
+          </article>
+          <article class="catalog-new__item" role="listitem">
+            <a
+              href="#"
+              role="button"
+              aria-label="Product details"
+              role="button"
+            >
+              <figure role="figure" aria-label="Cynthia">
+                <img
+                  src="img/catalog-5.svg"
+                  width="453"
+                  height="254"
+                  alt="A pair of glasses with pink frames and clear lenses, perfect for adding a touch of color to your look."
+                />
+              </figure>
+              <figcaption class="product-details">
+                <table role="presentation">
+                  <tr>
+                    <th scope="row">Product Name</th>
+                    <td>Cynthia</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Available Colors</th>
+                    <td>2 colours</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Price</th>
+                    <td>$173</td>
+                  </tr>
+                </table>
+              </figcaption>
+            </a>
+          </article>
+          <article class="catalog-new__item" role="listitem">
+            <a
+              href="#"
+              role="button"
+              aria-label="Product details"
+              role="button"
+            >
+              <figure role="figure" aria-label="Eimear">
+                <img
+                  src="img/catalog-6.svg"
+                  width="453"
+                  height="254"
+                  alt="A stylish pair of sunglasses with a pink frame, perfect for adding a pop of color to any outfit."
+                />
+              </figure>
+              <figcaption class="product-details">
+                <table role="presentation">
+                  <tr>
+                    <th scope="row">Product Name</th>
+                    <td>Eimear</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Available Colors</th>
+                    <td>2 colours</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Price</th>
+                    <td>$105</td>
+                  </tr>
+                </table>
+              </figcaption>
+            </a>
+          </article>
+        </div>
       </section>
       <!-- Another Promo Section -->
       <section class="promo-section" aria-label="Another Promo Section">
@@ -243,26 +354,36 @@
         </div>
       </section>
       <!-- Our Brands Section -->
-      <section aria-label="Our brands">
-        <header>
-          <h2>Our brands</h2>
-          <a href="#" aria-label="See more" role="button">SEE MORE</a>
+      <section class="brand" aria-label="Our brands">
+        <header class="page-header">
+          <div class="container brand__container">
+            <h2 class="brand__header">Our brands</h2>
+            <a class="brand__link" href="#" aria-label="See more" role="button"
+              >SEE MORE</a
+            >
+          </div>
         </header>
-        <article role="article">
-          <h3>Who are we?</h3>
-          <p>
-            Apologies if you were looking for an ordinary optical store. We've
-            hand-picked the unique brands from all over the world to give you
-            the special look for your everyday life.
-          </p>
-          <p>
-            Our glasses will have you looking great and feeling better. We work
-            with independent brands who use the highest-grade of materials,
-            demonstrating detail and craftsmanship in every single pair. A wide
-            range of styles reflect the diversity of our clients and are made to
-            suit different face shapes.
-          </p>
-          <figure role="figure" aria-label="Picture of owner">
+        <article class="brand__content" role="article">
+          <div class="container">
+            <h3 class="brand__subtitle">Who are we?</h3>
+            <p class="brand__paragraph">
+              Apologies if you were looking for an ordinary optical store. We've
+              hand-picked the unique brands from all over the world to give you
+              the special look for your everyday life.
+            </p>
+            <p class="brand__paragraph">
+              Our glasses will have you looking great and feeling better. We
+              work with independent brands who use the highest-grade of
+              materials, demonstrating detail and craftsmanship in every single
+              pair. A wide range of styles reflect the diversity of our clients
+              and are made to suit different face shapes.
+            </p>
+          </div>
+          <figure
+            class="brand__figure"
+            role="figure"
+            aria-label="Picture of owner"
+          >
             <img
               src="img/whoarewe.png"
               width="420"
@@ -271,48 +392,82 @@
             />
           </figure>
         </article>
-        <!-- Feedback Form -->
-        <form action="#" method="post" role="form" aria-label="Feedback Form">
-          <h3>Give Us Your Feedback</h3>
-          <p>We'd love to hear from you. Please share your thoughts below.</p>
-          <label for="feedbackName">Name:</label>
-          <input
-            type="text"
-            id="feedbackName"
-            name="feedbackName"
-            aria-describedby="feedbackName-help"
-            aria-required="true"
-          />
-          <div id="feedbackName-help" role="contentinfo">
-            <p role="definition">Please enter your full name.</p>
+      </section>
+      <!-- Feedback Form -->
+      <section class="form">
+        <form
+          class="feedback-form"
+          action="#"
+          method="post"
+          role="form"
+          aria-label="Feedback Form"
+        >
+          <h3 class="feedback-form__title">Give Us Your Feedback</h3>
+          <p class="feedback-form__description">
+            We'd love to hear from you. Please share your thoughts below.
+          </p>
+          <label class="feedback-form__label" for="feedbackName">Name:</label>
+          <div>
+            <input
+              class="feedback-form__input"
+              type="text"
+              id="feedbackName"
+              name="feedbackName"
+              aria-describedby="feedbackName-help"
+              aria-required="true"
+            />
+            <div
+              class="feedback-form__help"
+              id="feedbackName-help"
+              role="contentinfo"
+            >
+              <p role="definition">Please enter your full name.</p>
+            </div>
           </div>
-          <label for="feedbackEmail">Email:</label>
-          <input
-            type="email"
-            id="feedbackEmail"
-            name="feedbackEmail"
-            aria-describedby="feedbackEmail-help"
-            required
-            aria-required="true"
-          />
-          <div id="feedbackEmail-help" role="contentinfo">
-            <p role="definition">Please enter a valid email address.</p>
+          <label class="feedback-form__label" for="feedbackEmail">Email:</label>
+          <div>
+            <input
+              class="feedback-form__input"
+              type="email"
+              id="feedbackEmail"
+              name="feedbackEmail"
+              aria-describedby="feedbackEmail-help"
+              required
+              aria-required="true"
+            />
+            <div
+              class="feedback-form__help"
+              id="feedbackEmail-help"
+              role="contentinfo"
+            >
+              <p role="definition">Please enter a valid email address.</p>
+            </div>
           </div>
-          <label for="feedbackMessage">Feedback:</label>
-          <textarea
-            id="feedbackMessage"
-            name="feedbackMessage"
-            rows="4"
-            aria-describedby="feedbackMessage-help"
-            required
-            aria-required="true"
-          ></textarea>
-          <div id="feedbackMessage-help" role="contentinfo">
-            <p role="definition">
-              Please provide your feedback in the space below.
-            </p>
+          <label class="feedback-form__label" for="feedbackMessage"
+            >Feedback:</label
+          >
+          <div>
+            <textarea
+              class="feedback-form__textarea"
+              id="feedbackMessage"
+              name="feedbackMessage"
+              rows="4"
+              aria-describedby="feedbackMessage-help"
+              required
+              aria-required="true"
+            ></textarea>
+            <div
+              class="feedback-form__help"
+              id="feedbackMessage-help"
+              role="contentinfo"
+            >
+              <p role="definition">
+                Please provide your feedback in the space below.
+              </p>
+            </div>
           </div>
           <button
+            class="feedback-form__submit"
             type="submit"
             role="button"
             aria-live="assertive"
@@ -324,34 +479,66 @@
       </section>
     </main>
     <!-- Footer Section -->
-    <footer role="contentinfo">
-      <figure aria-hidden="true">
-        <img src="img/logo.svg" width="124" height="109" alt="Logo of store." />
-      </figure>
-      <ul role="list">
-        <li role="listitem">
-          <a href="#" aria-label="About us" role="button">About Us</a>
-        </li>
-        <li role="listitem">
-          <a href="#" aria-label="Contact Us" role="button">Contact Us</a>
-        </li>
-        <li role="listitem">
-          <a href="#" aria-label="Terms and Conditions" role="button"
-            >Terms and Conditions</a
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__container">
+        <figure class="footer__logo" aria-hidden="true">
+          <img
+            src="img/logo.svg"
+            width="124"
+            height="109"
+            alt="Logo of store."
+          />
+        </figure>
+        <nav class="footer__nav">
+          <ul class="footer__list" role="list">
+            <li class="footer__item" role="listitem">
+              <a
+                class="footer__link"
+                href="#"
+                aria-label="About us"
+                role="button"
+                >About Us</a
+              >
+            </li>
+            <li class="footer__item" role="listitem">
+              <a
+                class="footer__link"
+                href="#"
+                aria-label="Contact Us"
+                role="button"
+                >Contact Us</a
+              >
+            </li>
+            <li class="footer__item" role="listitem">
+              <a
+                class="footer__link"
+                href="#"
+                aria-label="Terms and Conditions"
+                role="button"
+                >Terms and Conditions</a
+              >
+            </li>
+            <li class="footer__item" role="listitem">
+              <a
+                class="footer__link"
+                href="#"
+                aria-label="Privacy Policy"
+                role="button"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <address class="footer__address" role="contentinfo">
+          <p class="footer__phone">+31 657 485 73 26</p>
+          <a
+            class="footer__email"
+            href="mailto:hello@yesforeyes.com"
+            role="link"
+            >hello@yesforeyes.com</a
           >
-        </li>
-        <li role="listitem">
-          <a href="#" aria-label="Privacy Policy" role="button"
-            >Privacy Policy</a
-          >
-        </li>
-      </ul>
-      <address role="contentinfo">
-        <p>+31 657 485 73 26</p>
-        <a href="mailto:hello@yesforeyes.com" role="link"
-          >hello@yesforeyes.com</a
-        >
-      </address>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
